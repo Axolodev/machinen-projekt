@@ -32,10 +32,10 @@ output = """
 gantt
 dateFormat  x
 axisFormat %S,%L
-title Machinen
+title Maschinen
 """
 for machine in machines:
-  output += "\nsection Machine {}\n".format(machine)
+  output += "\nsection Maschine {}\n".format(machine)
   for job in machines[machine]:
     output += "Job {} : {},{},{}\n".format(job["job"], job["index"], job["start"], job["end"])
 
